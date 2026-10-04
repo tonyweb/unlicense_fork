@@ -29,7 +29,7 @@ jobs:
           virtualenvs-in-project: true
 
       - name: Install Dependencies
-        run: poetry install
+        run: poetry.group install
 
       - name: Run yapf
         run: poetry run yapf -r -d unlicense
